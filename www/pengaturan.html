@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+    <link rel="stylesheet" type="text/css" href="cosmo/css/cosmo.min.css" class="uib-framework-theme">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+    <script src="intelxdk.js"></script>
+    <script src="cordova.js"></script>
+    <script src="xhr.js"></script>
+    <script src="xdk/init-dev.js"></script>
+    <script type="application/javascript" src="lib/jquery.min.js"></script>
+    <script type="application/javascript" src="marginal/marginal-position.min.js"></script>
+    <script type="application/javascript" src="js/index_user_scripts.js"></script>
+    <script type="application/javascript" src="xdk/ad/bs_subpage.js"></script>
+    <script type="application/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="upage" id="mainpage">
+      <div class="upage-outer">
+        <div class="uib-header header-bg container-group inner-element uib_w_2" data-uib="layout/header" data-ver="0">
+          <a href="barang.html" class="btn widget btn-primary glyphicon glyphicon-home"></a>
+          <h2>Shopahlic</h2> 
+        </div>
+
+        <ul class="nav nav-tabs">
+          <li id="barang"><a href="barang.html"><span class="glyphicon glyphicon-calendar"></span>  Buat</a>
+          </li>
+          <li id="skedul"><a href="skedul.html"><span class="glyphicon glyphicon-th-list"></span> Jadwal</a>
+          </li>
+          <li class="active" id="pengaturan"><a href="pengaturan.html"><span class="glyphicon glyphicon-user"></span> Pengaturan</a>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active" id="pengaturan">
+              <ul class="list-group">
+                <li class="list-group-item">Nama Lengkap
+<!--                    <label class="label-top-left" style="margin-left:10px;">Nama Lengkap</label>-->
+                    <input class="form-control default input-sm" type="text" placeholder="Nama Lengkap">
+                </li>
+                <li class="list-group-item">Email
+<!--                    <label class="label-top-left" style="margin-left:10px;">Email</label>-->
+                    <input class="form-control default input-sm" type="text" placeholder="Email" name="email">
+                </li>
+                <li class="list-group-item">Username
+<!--                    <label class="label-top-left" style="margin-left:10px;">Username</label>-->
+                    <input class="form-control default input-sm" type="text" placeholder="Username">
+                </li>
+                <li class="list-group-item">Password
+                  <input class="form-control default input-sm" style="margin-bottom:10px;" type="password" placeholder="Password Baru">
+                  <input class="form-control default input-sm" type="password" placeholder="Ulangi Password">
+                </li>
+                <li class="list-group-item">
+                    <input type="button" class="btn btn-primary form-control" style="margin-bottom:5px;" value="Simpan" id="btn-simpan-register">
+                    <input type="button" class="btn btn-primary form-control" value="Log out" id="btn-logout-setting">
+                </li>
+              </ul>
+              
+              
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </body>
+
+</html>
